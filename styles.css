@@ -23,6 +23,15 @@ body {
     background-position: center;
 }
 
+main {
+    display: none;
+}
+
+main#home {
+    display: block;
+}
+
+
 i {
     color: var(--primary-color);
     font-size: xx-large;
@@ -86,7 +95,7 @@ header p {
     margin-bottom: 2rem;
 }
 
-header button {
+header .button {
     background-color: var(--primary-color);
     color: var(--light-color);
     padding: 0.75rem 1.5rem;
@@ -98,7 +107,7 @@ header button {
     transition: transform 0.2s ease-in-out;
 }
 
-header button:hover {
+header .button:hover {
     transform: scale(1.05);
 }
 
@@ -126,7 +135,7 @@ header button:hover {
     color: #2D3142;
 }
 
-.offer button {
+.offer .button {
     background-color: var(--light-color);
     color: var(--primary-color);
     padding: 0.75rem 1.5rem;
