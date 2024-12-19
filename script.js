@@ -12,5 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
         element.classList.add("active");
       }
     });
+
+    document.getElementById('toggleFormButton').addEventListener('click', function() {
+      document.getElementById('membershipForm').classList.toggle('hidden');
+    });
+
+    document.getElementById('sendFormButton').addEventListener('click', function(event) {
+      event.preventDefault();
+      const form = document.getElementById('membershipForm');
+      form.innerHTML = '<p>Tack! Vi återkommer till dig.</p>';
+  });
+  
+  
   });
   

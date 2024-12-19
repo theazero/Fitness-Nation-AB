@@ -24,16 +24,20 @@
         <section class="offer">
           <h1>Ett Gym, En Gemenskap, En Ny Livsstil</h1>
           <p>Ta del av vårt erbjudande: <br><strong>45 kr/månad</strong></p>
-          <button id="toggleExpansion" class="button">Bli medlem</button>
+          <button id="toggleFormButton" class="button">Bli medlem</button>
       
           <form id="membershipForm" class="hidden">
-            <label for="name">Namn:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">E-post:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <button type="submit" class="button">Skicka</button>
+            <fieldset>
+              <label for="name">Namn:</label>
+              <input type="text" id="name" name="name" required>
+              </fieldset>
+            <fieldset>
+              <label for="email">E-post:</label>
+              <input type="email" id="email" name="email" required>
+            </fieldset>
+            <fieldset>
+              <button type="submit" class="button" id="sendFormButton">Skicka</button>
+            </fieldset>
           </form>
 
         </section>

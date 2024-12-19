@@ -168,10 +168,20 @@ header .button:hover {
 
 }
 
-.hidden {
-    display: none;
+#membershipForm {
+    max-height: 100vh;
+    overflow: hidden;
+    transition-duration: 0.3s;
 }
 
+.hidden {
+    max-height: 0 !important;
+    transition-duration: 0.3s;
+}
+
+#membershipForm fieldset {
+    border: none;
+}
 
 .container-gym{
     display: flex;
