@@ -60,10 +60,10 @@ describe('Script functionality', () => {
     const toggleButton = document.getElementById('toggleFormButton');
     const membershipForm = document.getElementById('membershipForm');
 
-    toggleButton.click(); // Simulate click event
+    toggleButton.click(); // Simulera knapptryck
     expect(membershipForm.classList.contains('hidden')).toBe(false);
 
-    toggleButton.click(); // Simulate another click event
+    toggleButton.click(); // Simulera knapptryck igen
     expect(membershipForm.classList.contains('hidden')).toBe(true);
   });
 
@@ -74,7 +74,7 @@ describe('Script functionality', () => {
     const sendFormButton = document.getElementById('sendFormButton');
     const membershipForm = document.getElementById('membershipForm');
 
-    sendFormButton.click(); // Simulate form submission
+    sendFormButton.click(); // Skicka iväg formuläret
     expect(membershipForm.innerHTML).toBe('<p>Tack! Vi återkommer till dig.</p>');
   });
 });
