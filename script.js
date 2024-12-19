@@ -18,6 +18,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     document.getElementById('sendFormButton').addEventListener('click', function(event) {
+
+      // Hämta värden från formuläret
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+
+      // Kolla om de angivit en giltig epost
+      const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+      if (!name || !email || !emailRegex.test(email))
+        return; // Hindra koden från att fortsätta exekvera
+
       event.preventDefault();
       const form = document.getElementById('membershipForm');
       form.innerHTML = '<p>Tack! Vi återkommer till dig.</p>';
